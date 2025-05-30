@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthdayyyy Princesss</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff0f5;
+      color: #333;
+      background-image: url('https://i.pinimg.com/736x/39/d9/58/39d9581bc8a1d88a008af6b72be57322.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      background: rgba(255, 255, 255, 0.85);
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #e91e63;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #c2185b;
+      margin-bottom: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .playlist iframe, .video iframe {
+      width: 100%;
+      border-radius: 12px;
+      height: 500px;
+    }
+    .countdown {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: #880e4f;
+    }
+    button {
+      display: block;
+      margin: 1rem auto 0;
+      padding: 1rem 2rem;
+      background: #ec407a;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #d81b60;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Happy Birthdayyyy Princesss 🎉👑</h1>
+    <p>A little something special just for you 💗</p>
+  </header>
+
+  <section>
+    <h2>💌 Your Birthday Message</h2>
+    <p>Happy 20th Birthday, my beautiful princess Bhoomiiii 🩷
+      I can't believe the most gorgeous, kind, and loving soul I know just turned 20 today. You deserve all the love, joy, and magic the world has to offer — and I'll spend every moment doing my best to give you just that.
+      From the way your smile melts my worries to the way your laugh becomes the highlight of my day, everything about you feels like home. Im so grateful to be a part of your life, and I can't wait to grow through our 20s — together.
+      
+      Here's to our journey which started a year ago with many ups and downs, our first meetup at kalindi college,aapka faridabad aana, blueberry cheesecake, westside shopping lol, late-night calls, misunderstandings, distance, ghosting, then again back on track(So Happy) and those facetimes, 
+      little surprises, forehead kisses, scooty rides,subha subha badminton damnn bestt koi ni jeet skta hum dono se but obv aapse toh bilkul bhi nhi, brucha, aapka office aajana was something i'll never forget, 
+      long drive - Qutab Minar dekhliya finally yayy.
+
+      And I want to thankyou for everything and also sorry for everything i did wrong.
+      I love you more than words can say.
+
+      Your Saasu Maa 🩷</p>
+  </section>
+
+  <section class="gallery">
+    <h2>📸 Our Moments</h2>
+    <img src="file:///Users/hitarthkhurana19/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos/ExternalEditSessions/90D27C4C-9865-4298-B0A6-DA2580F1F14F/IMG_0207.jpeg">
+    <img src="file:///Users/hitarthkhurana19/Downloads/A522B622-81FF-4A5B-BB17-FAFFD4300C8B.JPG">
+    <img src="file:///Users/hitarthkhurana19/Downloads/Document%2018_7.jpg">
+    <img src="file:///Users/hitarthkhurana19/Downloads/Document%2018_2.jpg">
+    <img src="file:///Users/hitarthkhurana19/Downloads/Document%2018_3.jpg">
+    <img src="file:///Users/hitarthkhurana19/Downloads/Document%2018_4.jpg">
+    <img src="file:///Users/hitarthkhurana19/Downloads/FA977405-9918-4BB1-B369-E045088E55B7.JPG">
+    <img src="file:///Users/hitarthkhurana19/Downloads/Document%2018_5.jpg">  
+  </section>
+
+  <section class="playlist">
+    <h2>🎶 Your Playlist</h2>
+    <p><iframe style="border: radius 12px;" src="https://open.spotify.com/embed/playlist/0TBJXZ3JpXKZ499oMBebLa?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></p>
+  </section>
+
+
+  <section>
+    <h2>📅 Countdown to your birthday party🥳</h2>
+    <div class="countdown" id="countdown">Loading countdown...</div>
+  </section>
+
+
+  <section>
+    <h2>📬 Message Me Now</h2>
+    <button onclick="window.location.href='https://wa.me/7303976069'">Open WhatsApp</button>
+  </section>
+
+  <script>
+    // Countdown Timer
+    const countDownDate = new Date("Jun 01, 2025 14:00:00").getTime(); // Replace with your date
+    const countdown = document.getElementById("countdown");
+    const x = setInterval(function () {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      if (distance < 0) {
+        clearInterval(x);
+        countdown.innerHTML = "It's Time! 💖";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
